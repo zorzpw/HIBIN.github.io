@@ -82,11 +82,9 @@ setTimeout(showsectime, 1000);
 </ml></center>
 
     </strong>
-<!-- 海滨牛逼 -->
-	<!doctype html>
-<html>
-<head>
+
 <meta charset="utf-8">
+
 
 <style>
 body {
@@ -96,7 +94,7 @@ body {
 h4 {
 	font-family:sans-serif;
 	color:#555555;
-	font-size:16px;
+	font-size:18px;
 }
 h3 {
 	font-family:sans-serif;
@@ -105,7 +103,7 @@ h3 {
 p {
 	font-family:sans-serif;
 	color:#888888;
-	font-size:14px;
+	font-size:18px;
 }
 a {
 	font-family:sans-serif;
@@ -115,23 +113,24 @@ a {
 </style>
 
 </head>
+        
 <body>
 
 <script src="modernizr.min.js"></script>
 
-<div style="text-align:center">
 
-	<canvas id="canvasOne" width="420" height="420" ></canvas>
+
+	<canvas id="canvasOne" width="290" height="320" ></canvas>
 
 </div>
 
 <script type="text/javascript">
 window.addEventListener("load", windowLoadHandler, false);
-var sphereRad = 280;
+var sphereRad = 200;
 var radius_sp=1;
 var opt_display_dots = false;
 
-var unicodeFlakes = [ 'vccc','Name','blackLin','Kcalb','loli','pangci','frank','wdadwda','CD','LeonardoWatch','panty','Betrayer','Da_huang','Lancer','xiaojian','zlk','Anby','H2O2','Ling','ice_awei','mmy','Shanson','sa','Fitz1','Ram','skteed','zbzjh','mmy','JianSAMA' ];
+var unicodeFlakes = ['vccc','Name','blackLin','Kcalb','loli','pangci','frank','wdadwda','CD','LeonardoWatch','panty','Betrayer','Da_huang','Lancer','xiaojian','zlk','Anby','H2O2','Ling','ice_awei','mmy','Shanson','sa','Fitz1','Ram','skteed','zbzjh','mmy','JianSAMA','lieyuan','hhhhhh' ];
 
 //for debug messages
 var Debugger = function() { };
@@ -204,9 +203,9 @@ function canvasApp() {
 		numToAddEachFrame = 4;
 		
 		//particle color
-		r = 70;
+		r = 255;
 		g = 255;
-		b = 140;
+		b = 255;
 		
 		rgbString = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
 		particleAlpha = 1; //maximum alpha
@@ -240,9 +239,8 @@ function canvasApp() {
 		sphereCenterZ = -3 - sphereRad;
 		
 		//alpha values will lessen as particles move further back, causing depth-based darkening:
-		zeroAlphaDepth = -750; 
-		
-		turnSpeed = 2*Math.PI/1200; //the sphere will rotate at this speed (one complete rotation every 1600 frames).
+		zeroAlphaDepth = -20; 
+		turnSpeed =2*Math.PI/1600; //the sphere will rotate at this speed (one complete rotation every 1600 frames).
 		turnAngle = 0; //initial angle
 		
 		timer = setInterval(onTimer, 10/24);
@@ -275,10 +273,10 @@ function canvasApp() {
 				p.lastValue = 0;
 				
 				//the particle will be stuck in one place until this time has elapsed:
-				p.stuckTime = 90 + Math.random()*20;
+				p.stuckTime =100 + Math.random()*2;
 				
 				p.accelX = 0;
-				p.accelY = gravity;
+				p.accelY = 0;
 				p.accelZ = 0;
 			}
 		}
@@ -476,28 +474,20 @@ function canvasApp() {
 
 </body>
 </html>
+
+
 	<!-- 海滨牛逼 -->
 		<!-- 海滨牛逼 -->
 			<!-- 海滨牛逼 -->
 				<!-- 海滨牛逼 -->
 					
 
-</p>
+
 	<p class="footer">Copyright © 2015-2019 <a href="/" target="_blank">HiBIN</a> All Rights Reserved.</p>	
 
 
           
-<div>
-<nav class="cover-navigation navigation--social">
-  <ul class="navigation">
 
-  
-  
-  
-  
-  </ul>
-</nav>
-</div>
         </div>
       </div>
     </div>
